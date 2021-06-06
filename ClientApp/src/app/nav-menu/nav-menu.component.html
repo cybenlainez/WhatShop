@@ -3,13 +3,13 @@
     <div class="container">
       <ul class="navbar-nav flex-grow">
         <li class="nav-item" [routerLinkActive]="['link-active']">
-          <a class="nav-link text-light top-menu-text" [routerLink]="['/']">Seller Center</a>
+          <a class="nav-link text-light top-menu-text" [routerLink]="['/seller-center']">Seller Center</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['link-active']">
-          <a class="nav-link text-light top-menu-text" [routerLink]="['/counter']">Sell on WhatShop</a>
+          <a class="nav-link text-light top-menu-text" [routerLink]="['/sell-on-whatshop']">Sell on WhatShop</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['link-active']">
-          <a class="nav-link text-light top-menu-text" [routerLink]="['/fetch-data']">Contact us</a>
+          <a class="nav-link text-light top-menu-text" [routerLink]="['/contact-us']">Contact us</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['link-active']">
           <a class="nav-link text-light top-menu-text" [routerLink]="['/about']">About</a>
@@ -39,6 +39,9 @@
           <li class="nav-item" [routerLinkActive]="['link-active']">
             <a class="nav-link text-light top-menu-text" [routerLink]="['/fetch-data']">Fetch data</a>
           </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-light top-menu-text" [routerLink]="['/products']">Products</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,7 +51,7 @@
 
     <div class="container">
 
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" [routerLink]="['/']">
         <img src="../../assets/images/logo.png" alt="WhatShop" height="50">
       </a>
 
