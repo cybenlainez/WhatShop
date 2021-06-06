@@ -1,0 +1,72 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary nav-height-sm">
+    <div class="container">
+      <ul class="navbar-nav flex-grow">
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link text-light top-menu-text" [routerLink]="['/']">Seller Center</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link text-light top-menu-text" [routerLink]="['/counter']">Sell on WhatShop</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link text-light top-menu-text" [routerLink]="['/fetch-data']">Contact us</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link text-light top-menu-text" [routerLink]="['/fetch-data']">About</a>
+        </li>
+      </ul>
+      <!--<a class="navbar-brand" [routerLink]="['/']">WhatShop</a>-->
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-label="Toggle navigation"
+              [attr.aria-expanded]="isExpanded"
+              (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+           [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item"
+              [routerLinkActive]="['link-active']"
+              [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-light top-menu-text" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-light top-menu-text" [routerLink]="['/counter']">Counter</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-light top-menu-text" [routerLink]="['/fetch-data']">Fetch data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3 nav-height-md">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/images/logo.png" alt="WhatShop" height="50">
+      </a>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="search products here" aria-label="search products here" aria-describedby="button-addon2">
+        <button class="btn btn-light" type="button" id="button-addon2">
+          <img src="../../assets/images/search.png" alt="Cart" height="18" style="padding-bottom: 3px">
+        </button>
+      </div>
+
+      &nbsp;&nbsp;&nbsp;
+
+      <div class="text-center">
+        <a href="#" class="rounded">
+          <img src="../../assets/images/cart.png" alt="Cart" height="30">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</header>
